@@ -14,43 +14,53 @@ Z.m1
  */
 public class Aufgabe3
 {
-    private class X {
-        X() {
+    private class X
+    {
+        X()
+        {
             System.out.println("X");
         }
 
-        void m1() {
+        void m1()
+        {
             System.out.println("X.m1");
         }
     }
 
-    private class Y extends X {
-        Y() {
+    private class Y extends X
+    {
+        Y()
+        {
             System.out.println("Y");
         }
 
-        void m1() {
+        void m1()
+        {
             super.m1();
             System.out.println("Y.m1");
         }
     }
 
-    private class Z extends Y {
-        Z() {
+    private class Z extends Y
+    {
+        Z()
+        {
             System.out.println("Z");
         }
 
-        void m1() {
+        void m1()
+        {
             super.m1();
             System.out.println("Z.m1");
         }
     }
 
-    private void test() {
+    private void test()
+    {
         X x = new Y();
         x.m1();
 
-        Z z=new Z();
+        Z z = new Z();
         z.m1();
     }
 

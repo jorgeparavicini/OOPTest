@@ -16,10 +16,12 @@ public class Aufgabe2
         System.out.println(merge(a, b));
     }
 
-    public static ArrayList<Integer> merge(ArrayList<Integer> a, ArrayList<Integer> b) {
+    public static ArrayList<Integer> merge(ArrayList<Integer> a, ArrayList<Integer> b)
+    {
         ArrayList<Integer> result = new ArrayList<>();
 
-        for (int i = 0; i < Math.max(a.size(), b.size()); i++) {
+        for (int i = 0; i < Math.max(a.size(), b.size()); i++)
+        {
             if (i < a.size()) result.add(a.get(i));
             if (i < b.size()) result.add(b.get(i));
         }
